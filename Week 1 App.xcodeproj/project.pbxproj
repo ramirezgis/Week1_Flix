@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		558EC54A27114F53008B2C74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558EC54927114F53008B2C74 /* AppDelegate.swift */; };
 		558EC54C27114F53008B2C74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558EC54B27114F53008B2C74 /* SceneDelegate.swift */; };
-		558EC54E27114F53008B2C74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558EC54D27114F53008B2C74 /* ViewController.swift */; };
+		558EC54E27114F53008B2C74 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558EC54D27114F53008B2C74 /* MoviesViewController.swift */; };
 		558EC55127114F53008B2C74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558EC54F27114F53008B2C74 /* Main.storyboard */; };
 		558EC55327114F56008B2C74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 558EC55227114F56008B2C74 /* Assets.xcassets */; };
 		558EC55627114F56008B2C74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 558EC55427114F56008B2C74 /* LaunchScreen.storyboard */; };
 		558EC56127114F56008B2C74 /* Week_1_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558EC56027114F56008B2C74 /* Week_1_AppTests.swift */; };
 		558EC56C27114F56008B2C74 /* Week_1_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558EC56B27114F56008B2C74 /* Week_1_AppUITests.swift */; };
+		558EC57A27117072008B2C74 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558EC57927117072008B2C74 /* MovieCell.swift */; };
+		558EC57D27117854008B2C74 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 558EC57C27117854008B2C74 /* AlamofireImage */; };
+		7AFC04DAA18C649E330AB9A7 /* Pods_Week_1_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A079B46019F8335D9E16B899 /* Pods_Week_1_App.framework */; };
+		8781645E739E9C98424F352E /* Pods_Week_1_App_Week_1_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E83ECADF2ACD48CA658CDEBD /* Pods_Week_1_App_Week_1_AppUITests.framework */; };
+		A891AA368D42C763439FEC39 /* Pods_Week_1_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A201E7954514EEF370A6DE24 /* Pods_Week_1_AppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01E6B708144E8AA1EF8FABF8 /* Pods-Week 1 AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Week 1 AppTests.release.xcconfig"; path = "Target Support Files/Pods-Week 1 AppTests/Pods-Week 1 AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		08EA87CF2BD53536A59CB8B9 /* Pods-Week 1 AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Week 1 AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Week 1 AppTests/Pods-Week 1 AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		558EC54627114F53008B2C74 /* Week 1 App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Week 1 App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		558EC54927114F53008B2C74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		558EC54B27114F53008B2C74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		558EC54D27114F53008B2C74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		558EC54D27114F53008B2C74 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		558EC55027114F53008B2C74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		558EC55227114F56008B2C74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		558EC55527114F56008B2C74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +56,14 @@
 		558EC56727114F56008B2C74 /* Week 1 AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Week 1 AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		558EC56B27114F56008B2C74 /* Week_1_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week_1_AppUITests.swift; sourceTree = "<group>"; };
 		558EC56D27114F56008B2C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		558EC57927117072008B2C74 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		592E1A55B94DB21CB9CCFF32 /* Pods-Week 1 App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Week 1 App.release.xcconfig"; path = "Target Support Files/Pods-Week 1 App/Pods-Week 1 App.release.xcconfig"; sourceTree = "<group>"; };
+		7605A3F322FF34B4421F9483 /* Pods-Week 1 App-Week 1 AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Week 1 App-Week 1 AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Week 1 App-Week 1 AppUITests/Pods-Week 1 App-Week 1 AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C83F6B0B4C7AA72F7AC4272 /* Pods-Week 1 App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Week 1 App.debug.xcconfig"; path = "Target Support Files/Pods-Week 1 App/Pods-Week 1 App.debug.xcconfig"; sourceTree = "<group>"; };
+		A079B46019F8335D9E16B899 /* Pods_Week_1_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Week_1_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A201E7954514EEF370A6DE24 /* Pods_Week_1_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Week_1_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E80DD30AA48FB69DA4AE5CFD /* Pods-Week 1 App-Week 1 AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Week 1 App-Week 1 AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Week 1 App-Week 1 AppUITests/Pods-Week 1 App-Week 1 AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E83ECADF2ACD48CA658CDEBD /* Pods_Week_1_App_Week_1_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Week_1_App_Week_1_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				558EC57D27117854008B2C74 /* AlamofireImage in Frameworks */,
+				7AFC04DAA18C649E330AB9A7 /* Pods_Week_1_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A891AA368D42C763439FEC39 /* Pods_Week_1_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8781645E739E9C98424F352E /* Pods_Week_1_App_Week_1_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0254FC28B98761613B68796B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C83F6B0B4C7AA72F7AC4272 /* Pods-Week 1 App.debug.xcconfig */,
+				592E1A55B94DB21CB9CCFF32 /* Pods-Week 1 App.release.xcconfig */,
+				7605A3F322FF34B4421F9483 /* Pods-Week 1 App-Week 1 AppUITests.debug.xcconfig */,
+				E80DD30AA48FB69DA4AE5CFD /* Pods-Week 1 App-Week 1 AppUITests.release.xcconfig */,
+				08EA87CF2BD53536A59CB8B9 /* Pods-Week 1 AppTests.debug.xcconfig */,
+				01E6B708144E8AA1EF8FABF8 /* Pods-Week 1 AppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		38A25314CD49FBFA315FE02C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A079B46019F8335D9E16B899 /* Pods_Week_1_App.framework */,
+				E83ECADF2ACD48CA658CDEBD /* Pods_Week_1_App_Week_1_AppUITests.framework */,
+				A201E7954514EEF370A6DE24 /* Pods_Week_1_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		558EC53D27114F53008B2C74 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +126,8 @@
 				558EC55F27114F56008B2C74 /* Week 1 AppTests */,
 				558EC56A27114F56008B2C74 /* Week 1 AppUITests */,
 				558EC54727114F53008B2C74 /* Products */,
+				0254FC28B98761613B68796B /* Pods */,
+				38A25314CD49FBFA315FE02C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,7 +146,8 @@
 			children = (
 				558EC54927114F53008B2C74 /* AppDelegate.swift */,
 				558EC54B27114F53008B2C74 /* SceneDelegate.swift */,
-				558EC54D27114F53008B2C74 /* ViewController.swift */,
+				558EC57927117072008B2C74 /* MovieCell.swift */,
+				558EC54D27114F53008B2C74 /* MoviesViewController.swift */,
 				558EC54F27114F53008B2C74 /* Main.storyboard */,
 				558EC55227114F56008B2C74 /* Assets.xcassets */,
 				558EC55427114F56008B2C74 /* LaunchScreen.storyboard */,
@@ -135,15 +181,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 558EC57027114F56008B2C74 /* Build configuration list for PBXNativeTarget "Week 1 App" */;
 			buildPhases = (
+				343944DD6F3BCC7792B982C1 /* [CP] Check Pods Manifest.lock */,
 				558EC54227114F53008B2C74 /* Sources */,
 				558EC54327114F53008B2C74 /* Frameworks */,
 				558EC54427114F53008B2C74 /* Resources */,
+				62B181E7D19CEBC5F8F06D3B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Week 1 App";
+			packageProductDependencies = (
+				558EC57C27117854008B2C74 /* AlamofireImage */,
+			);
 			productName = "Week 1 App";
 			productReference = 558EC54627114F53008B2C74 /* Week 1 App.app */;
 			productType = "com.apple.product-type.application";
@@ -152,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 558EC57327114F56008B2C74 /* Build configuration list for PBXNativeTarget "Week 1 AppTests" */;
 			buildPhases = (
+				F7EAF19A8F1FF05E5235D9AD /* [CP] Check Pods Manifest.lock */,
 				558EC55827114F56008B2C74 /* Sources */,
 				558EC55927114F56008B2C74 /* Frameworks */,
 				558EC55A27114F56008B2C74 /* Resources */,
@@ -170,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 558EC57627114F56008B2C74 /* Build configuration list for PBXNativeTarget "Week 1 AppUITests" */;
 			buildPhases = (
+				95096560D28DB71B27F4F8F3 /* [CP] Check Pods Manifest.lock */,
 				558EC56327114F56008B2C74 /* Sources */,
 				558EC56427114F56008B2C74 /* Frameworks */,
 				558EC56527114F56008B2C74 /* Resources */,
+				218355EB2C6F25C5E548E8E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +269,9 @@
 				Base,
 			);
 			mainGroup = 558EC53D27114F53008B2C74;
+			packageReferences = (
+				558EC57B27117854008B2C74 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 558EC54727114F53008B2C74 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -253,13 +310,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		218355EB2C6F25C5E548E8E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Week 1 App-Week 1 AppUITests/Pods-Week 1 App-Week 1 AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Week 1 App-Week 1 AppUITests/Pods-Week 1 App-Week 1 AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Week 1 App-Week 1 AppUITests/Pods-Week 1 App-Week 1 AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		343944DD6F3BCC7792B982C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Week 1 App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62B181E7D19CEBC5F8F06D3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Week 1 App/Pods-Week 1 App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Week 1 App/Pods-Week 1 App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Week 1 App/Pods-Week 1 App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95096560D28DB71B27F4F8F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Week 1 App-Week 1 AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7EAF19A8F1FF05E5235D9AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Week 1 AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		558EC54227114F53008B2C74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				558EC54E27114F53008B2C74 /* ViewController.swift in Sources */,
+				558EC54E27114F53008B2C74 /* MoviesViewController.swift in Sources */,
 				558EC54A27114F53008B2C74 /* AppDelegate.swift in Sources */,
+				558EC57A27117072008B2C74 /* MovieCell.swift in Sources */,
 				558EC54C27114F53008B2C74 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +594,7 @@
 		};
 		558EC57127114F56008B2C74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C83F6B0B4C7AA72F7AC4272 /* Pods-Week 1 App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +614,7 @@
 		};
 		558EC57227114F56008B2C74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 592E1A55B94DB21CB9CCFF32 /* Pods-Week 1 App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +634,7 @@
 		};
 		558EC57427114F56008B2C74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08EA87CF2BD53536A59CB8B9 /* Pods-Week 1 AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +657,7 @@
 		};
 		558EC57527114F56008B2C74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01E6B708144E8AA1EF8FABF8 /* Pods-Week 1 AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +680,7 @@
 		};
 		558EC57727114F56008B2C74 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7605A3F322FF34B4421F9483 /* Pods-Week 1 App-Week 1 AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +701,7 @@
 		};
 		558EC57827114F56008B2C74 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E80DD30AA48FB69DA4AE5CFD /* Pods-Week 1 App-Week 1 AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -593,6 +760,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		558EC57B27117854008B2C74 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		558EC57C27117854008B2C74 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 558EC57B27117854008B2C74 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 558EC53E27114F53008B2C74 /* Project object */;
 }
